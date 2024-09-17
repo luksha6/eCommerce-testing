@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Luke App</title>
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="icon" type="image/png" href="./assets/logo.png" />
+  </head>
+  <body>
+    <nav>
+      <div class="logo-container">
+        <img src="./assets/logo.png" alt="Logo" class="navbar-logo" />
+      </div>
+      <div class="nav-links">
+        <a href="/" data-link>Products</a>
+        <a href="/cart" data-link id="cart-link">Cart (0)</a>
+        <a href="/checkout" data-link>Checkout</a>
+      </div>
+    </nav>
+    <div id="loading-bar" style="display: none">
+      <div class="loader"></div>
+      <p class="loading-text">Loading...</p>
+    </div>
+
+    <div id="app"></div>
+
+    <script type="module" src="./services/router.js"></script>
+  </body>
+</html>
